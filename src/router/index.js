@@ -13,4 +13,12 @@ router.delete('/livros/:id', controllers.delete)
 router.post('/cadastroLivros', controllers.create)
 router.put('/livros/:id', controllers.update)
 
+
+// reservas
+const controllersReserva = require('../controllers-reservas')
+
+router.get('/reservas', controllersReserva.read)
+router.post('/reservasCadas', controllersReserva.create)
+
+
 module.exports = router;

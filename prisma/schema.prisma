@@ -12,3 +12,9 @@ model livros {
   name     String @db.VarChar(45)
   autor    String @db.VarChar(45)
 }
+
+model reservas {
+  name  String @db.VarChar(45)
+  cpf   String @id @db.VarChar(20)
+  livro String @db.VarChar(35)
+}
