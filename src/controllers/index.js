@@ -7,8 +7,7 @@ module.exports ={
         const {name, autor} = req.body;
         if(!name) return res.status(400).json("Name required");
         if(!autor) return res.status(400).json("Autor required");
-        // const userName = await prisma.livros.findUnique({where: {idlivros}});
-        // if(userName) return res.status(400).json("name already used");
+     
         
         console.log(name, autor);
         // const userCreate = await prisma.livros.create({

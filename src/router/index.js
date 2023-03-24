@@ -17,8 +17,8 @@ router.put('/livros/:id', controllers.update)
 // reservas
 const controllersReserva = require('../controllers-reservas')
 
-router.get('/reservas', controllersReserva.read)
-router.post('/reservasCadas', controllersReserva.create)
+// router.get('/reservas', controllersReserva.read)
+// router.post('/reservasCadas', controllersReserva.create)
 
 
 module.exports = router;
