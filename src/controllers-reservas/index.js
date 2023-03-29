@@ -44,7 +44,7 @@ module.exports = {
             if(!book) return res.status(400).json('User not found');
 
             console.log(book);
-
+ 
             const bookDelete = await prisma.reservas.delete({
                 where: {cpf}
             });
